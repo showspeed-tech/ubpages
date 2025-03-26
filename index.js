@@ -19,6 +19,4 @@ app.all("*", (req, res, next) => {
   res.send(`The url path ${req.originalUrl} cannot be found`);
 });
 
-app.listen(PORT, () => {
-  console.log(`app running on port  ${PORT}`);
-});
+app.listen(PORT);
